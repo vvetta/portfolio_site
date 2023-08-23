@@ -1,0 +1,56 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: #2C2C2C;
+}
+
+.header__container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Container with buttons */
+.header__container:nth-child(2) {
+    justify-content: center;
+}
+
+.header__container_item {
+    margin-left: 15px;
+    margin-right: 15px;
+
+
+    display: flex;
+    flex-direction: row;
+}
+
+/* Header container item with logo */
+.logo {
+    color: #5DE7B5;
+}
+
+/* Header container item with application */
+.application {
+    color: white;
+}
+
+/* Header container item with buttons */
+.header__button {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    color: white;
+}

@@ -1,13 +1,59 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link src="{% static 'home/css/style.css' %}" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
     <title>Главная страница</title>
 </head>
 <body>
-    <script src="{% static 'home/js/main.js' %}"></script>
+
+    <!-- All content -->
+    <div class="page">
+
+        <!-- Header -->
+        <header>
+
+            <!-- Header container with logo -->
+            <div class="header__container">
+
+                <!-- logo -->
+                <div class="header__container_item logo">
+                    <h1>Коровин Никита</h1>
+                </div>
+
+                <!-- application -->
+                <div class="header__container_item application">
+                    <span>
+                        Оставить заявку на сайт
+                    </span>
+                </div>
+
+            </div>
+
+            <!-- Header container with buttons -->
+            <div class="header__container">
+                <div class="header__container_item">
+                    <!-- Button 1 -->
+                    <div class="header__button">
+                        <a>Обо мне</a>
+                    </div>
+                    <!-- Button 2 -->
+                    <div class="header__button">
+                        <a>Проекты</a>
+                    </div>
+                    <!-- Button 3 -->
+                    <div class="header__button">
+                        <a>Контакты</a>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+    </div>
+
+    <!-- All scripts -->
+    <script src="main.js"></script>
 </body>
 </html>
