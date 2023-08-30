@@ -6,6 +6,11 @@ body {
     margin: 0;
 
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+p {
+    color: white;
 }
 
 header {
@@ -20,6 +25,8 @@ header {
     rgba(0, 0, 0, 0.12) 0px 4px 6px, 
     rgba(0, 0, 0, 0.17) 0px 12px 13px, 
     rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    z-index: 3;
 }
 
 .header__container {
@@ -60,14 +67,14 @@ header {
     color: white;
 
     cursor: pointer;
-    z-index: 3;
+    z-index: 4;
 
     display: flex;
     align-items: center;
 }
 
 .application > span {
-    margin-right: 5px;
+    margin-right: 15px;
 }
 
 /* Header container item with buttons */
@@ -127,4 +134,90 @@ header {
 .header__button:hover .header__button_line{
     width: 100%;
     opacity: 1;
+}
+
+main{
+    
+}
+
+.main__container {
+    width: 100dvw;
+    height: 100dvh;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.main__container:nth-child(1) {
+    background-color: #212121;
+    flex-direction: row;
+}
+
+.main__container:nth-child(2) {
+    background-color: #EDEDED;
+}
+
+.main__container:nth-child(3) {
+    background-color: #212121;
+}
+
+.main__container:nth-child(4) {
+    background-color: #EDEDED;
+}
+
+.main__container_item {
+    margin-left: 15%;
+}
+
+.main__container_item_text > p:nth-child(1) {
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.main__container_item_text > .django_developer {
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.main__container_item_text > h1{
+    color: #5DE7B5;
+    font-size: 88px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin: 0px;
+
+}
+
+.main__container_item_text > p > span {
+    color: #5DE7B5;
+}
+
+.main__container_item_button {
+    margin-top: 40px;
+}
+
+.main__container_item_button > .main_button {
+    color: #212121;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background-color: #5DE7B5;
+    padding: 20px 60px 20px 60px;
+    cursor: pointer;
+    transition: all .4s ease;
+    box-shadow: 4px 5px 14px 0px #5de7b460;
+}
+
+.main_button:hover {
+    box-shadow: 4px 5px 14px 0px #5DE7B5;
 }
