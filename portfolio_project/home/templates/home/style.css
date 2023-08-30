@@ -285,6 +285,8 @@ main{
     cursor: pointer;
     transition: all .4s ease;
     box-shadow: 4px 5px 14px 0px #5de7b460;
+    flex-wrap: nowrap;
+    white-space: nowrap;
 }
 
 .main_button:hover {

@@ -9,6 +9,11 @@
         margin-left: 20px;
     }
 
+    .first__container_item {
+        justify-content: center;
+        margin: 0;
+    }
+
 }
 
 @media (max-width: 500px) {
@@ -32,6 +37,22 @@
 
     .application {
         display: none;
+    }
+
+}
+
+@media (max-width: 1470px) {
+
+    .main__container_item_text > h1 {
+        font-size: 65px;
+    }
+
+    .main__container_item_text > .django_developer {
+        font-size: 25px;
+    }
+
+    .first__container_item {
+        margin-left: 10%;
     }
 
 }
